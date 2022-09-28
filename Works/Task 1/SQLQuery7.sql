@@ -1,12 +1,12 @@
---8. Показать поля ProductID, 
---Name из таблицы Production.Product 
---с применением функции COALESCE(). 
---Показать поле Measurement, так, чтобы, 
---если значение в поле Color известно, 
---то показать его, а иначе, показать 
---значение в поле Weight. Если и в поле 
---Weight значение неизвестно, 
---то вывести значение 'UNKNOWN'.
+--8. РџРѕРєР°Р·Р°С‚СЊ РїРѕР»СЏ ProductID, 
+--Name РёР· С‚Р°Р±Р»РёС†С‹ Production.Product 
+--СЃ РїСЂРёРјРµРЅРµРЅРёРµРј С„СѓРЅРєС†РёРё COALESCE(). 
+--РџРѕРєР°Р·Р°С‚СЊ РїРѕР»Рµ Measurement, С‚Р°Рє, С‡С‚РѕР±С‹, 
+--РµСЃР»Рё Р·РЅР°С‡РµРЅРёРµ РІ РїРѕР»Рµ Color РёР·РІРµСЃС‚РЅРѕ, 
+--С‚Рѕ РїРѕРєР°Р·Р°С‚СЊ РµРіРѕ, Р° РёРЅР°С‡Рµ, РїРѕРєР°Р·Р°С‚СЊ 
+--Р·РЅР°С‡РµРЅРёРµ РІ РїРѕР»Рµ Weight. Р•СЃР»Рё Рё РІ РїРѕР»Рµ 
+--Weight Р·РЅР°С‡РµРЅРёРµ РЅРµРёР·РІРµСЃС‚РЅРѕ, 
+--С‚Рѕ РІС‹РІРµСЃС‚Рё Р·РЅР°С‡РµРЅРёРµ 'UNKNOWN'.
 SELECT 
 	  ProductID
 	, COALESCE(
@@ -21,7 +21,7 @@ SELECT @C1 + @C2 AS ANSWER;
 DECLARE @V1 VARCHAR(10) = '10';
 DECLARE @V2 VARCHAR(20) = '20';
 SELECT @V1 + @V2 AS ANSWER;
-DECLARE @N1 NVARCHAR(10) = N'Петров';
+DECLARE @N1 NVARCHAR(10) = N'РџРµС‚СЂРѕРІ';
 DECLARE @N2 NVARCHAR(20) = N'????';
 SELECT @N1 + @N2 AS ANSWER;
 DECLARE @Weight VARCHAR(10) = CAST(11.2 AS VARCHAR(10))

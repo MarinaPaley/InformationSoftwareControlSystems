@@ -1,6 +1,6 @@
---2. Показать поля TransactionID, ProductID, 
+--2. РџРѕРєР°Р·Р°С‚СЊ РїРѕР»СЏ TransactionID, ProductID, 
 --ReferenceOrderID, TransactionType, Quantity, 
---ActualCost из таблицы Production.TransactionHistory.
+--ActualCost РёР· С‚Р°Р±Р»РёС†С‹ Production.TransactionHistory.
 SELECT 
 	  TransactionID
 	, ProductID
