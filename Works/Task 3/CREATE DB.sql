@@ -1,0 +1,6 @@
+--Structured Query Language SQL
+--1. SQL SELECT
+--2. Data DEFINITIAL  L DDL
+--3. DATA MANIPULATION L DML 
+--4. TRANSACTION L
+CREATE DATABASE MarketShop;

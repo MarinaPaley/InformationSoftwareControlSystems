@@ -1,0 +1,16 @@
+CREATE TABLE Sale
+(
+	  ID INT NOT NULL
+	, ID_Product_Brand INT NOT NULL
+	, ListPrice MONEY NOT NULL
+	, SaleDate DATE NOT NULL
+);
+
+ALTER TABLE Sale
+ADD CONSTRAINT pk_Sale
+PRIMARY KEY(ID);
+
+ALTER TABLE Sale
+ADD CONSTRAINT fk_Product_Brand_Sale
+FOREIGN KEY(ID_Product_Brand)
+REFERENCES Product_Brand(ID);
